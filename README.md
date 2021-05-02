@@ -1,2 +1,4 @@
-# To-Do-App
-Simply a to-do app
+# TO DO APP
+
+### Description
+Created a to-do app **IN PROGRESS**
