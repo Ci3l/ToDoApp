@@ -35,7 +35,7 @@ public class ToDoApp extends JFrame{
 
     setJMenuBar(menuBar);
     setTitle("To Do");
-    setSize(400,800);
+    setSize(550,120);
     setLocationRelativeTo(null);
     setResizable(true);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -62,7 +62,7 @@ public class ToDoApp extends JFrame{
 		panel.add(minutes_deadline);
 
     note = new JTextField();
-		note.setColumns(10);
+		note.setColumns(20);
     panel.add(note);
 
     return panel;
