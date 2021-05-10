@@ -10,7 +10,6 @@ public class FromScratch extends AbstractAction {
 	}
 
 	public void actionPerformed(ActionEvent e) {
-    String[] options = {"1", "2", "3"};
-    String mTrimester1 = (String)JOptionPane.showInputDialog(null, "Enter Trimester","Trimester", JOptionPane.QUESTION_MESSAGE, options, options[2]);
+		//no need for this one but just in case
 	}
 }
