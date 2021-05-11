@@ -65,7 +65,7 @@ public class ToDoApp extends JFrame{
     JLabel date_deadline_label = new JLabel("date");
     panel.add(date_deadline_label);
 
-    Object[] months = new Object[]{"Janvier", "Février", "Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"};
+    Object[] months = new Object[]{"Janvier", "F\u00E9vrier", "Mars","Avril","Mai","Juin","Juillet","Ao\u00FBt","Septembre","Octobre","Novembre","D\u00E9cembre"};
     month_deadline = new JComboBox(months);
 		panel.add(month_deadline);
 
