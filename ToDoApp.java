@@ -95,6 +95,7 @@ public class ToDoApp extends JFrame{
   }
 
   public JTextField getNameTextField(){return nameTextField;}
+  public JTextField getNoteTextField(){return note;}
   public JComboBox getMonth(){return month_deadline;}
   public JComboBox getDates(){return date_deadline;}
   public JComboBox getHours(){return hours_deadline;}
