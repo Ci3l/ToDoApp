@@ -11,18 +11,18 @@ import java.awt.Color;
 import javax.swing.SwingUtilities;
 import java.awt.FlowLayout;
 public class ToDoApp extends JFrame{
-  private JButton create ;
-  private JLabel name_label;
-  private JLabel deadline_label;
-  private JLabel date_deadline_label ;
-  private JLabel hour_deadline_label ;
-  private JLabel note_label ;
-  private JTextField nameTextField ;
-  private JTextField note ;
-  private JComboBox month_deadline ;
-  private JComboBox date_deadline ;
-  private JComboBox hours_deadline ;
-  private JComboBox minutes_deadline ;
+  private static  JButton create ;
+  private static  JLabel name_label;
+  private static  JLabel deadline_label;
+  private static  JLabel date_deadline_label ;
+  private static  JLabel hour_deadline_label ;
+  private static  JLabel note_label ;
+  private static  JTextField nameTextField ;
+  private static  JTextField note ;
+  private static  JComboBox month_deadline ;
+  private static  JComboBox date_deadline ;
+  private static  JComboBox hours_deadline ;
+  private static  JComboBox minutes_deadline ;
   private ToDoApp main_frame = this ;
   public ToDoApp() {
     super();
@@ -99,12 +99,12 @@ public class ToDoApp extends JFrame{
     return panel;
   }
 
-  public JTextField getNameTextField(){return nameTextField;}
-  public JTextField getNoteTextField(){return note;}
-  public JComboBox getMonth(){return month_deadline;}
-  public JComboBox getDates(){return date_deadline;}
-  public JComboBox getHours(){return hours_deadline;}
-  public JComboBox getMinutes(){return minutes_deadline;}
+  public static String getNameTextField(){return nameTextField.getText();}
+  public static String getNoteTextField(){return note.getText();}
+  public static JComboBox getMonth(){return month_deadline;}
+  public static JComboBox getDates(){return date_deadline;}
+  public static JComboBox getHours(){return hours_deadline;}
+  public static JComboBox getMinutes(){return minutes_deadline;}
 
 
   public static void main(String[] args){
