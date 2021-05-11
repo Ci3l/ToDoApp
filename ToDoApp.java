@@ -1,5 +1,6 @@
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
 import javax.swing.JMenu;
@@ -10,6 +11,7 @@ import java.awt.Color;
 import javax.swing.SwingUtilities;
 import java.awt.FlowLayout;
 public class ToDoApp extends JFrame{
+  private JButton create ;
   private JLabel name_label;
   private JLabel deadline_label;
   private JLabel date_deadline_label ;
@@ -62,7 +64,7 @@ public class ToDoApp extends JFrame{
     JLabel deadline_label = new JLabel("Deadline : ");
     panel.add(deadline_label);
 
-    JLabel date_deadline_label = new JLabel("date");
+    JLabel date_deadline_label = new JLabel("   date");
     panel.add(date_deadline_label);
 
     Object[] months = new Object[]{"Janvier", "F\u00E9vrier", "Mars","Avril","Mai","Juin","Juillet","Ao\u00FBt","Septembre","Octobre","Novembre","D\u00E9cembre"};
@@ -73,7 +75,7 @@ public class ToDoApp extends JFrame{
     date_deadline = new JComboBox(dates);
 		panel.add(date_deadline);
 
-    JLabel hours_deadline_label = new JLabel("hour");
+    JLabel hours_deadline_label = new JLabel("   hour");
     panel.add(hours_deadline_label);
 
     Object[] hours = new Object[]{"0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23"};
@@ -90,6 +92,9 @@ public class ToDoApp extends JFrame{
     note = new JTextField();
 		note.setColumns(20);
     panel.add(note);
+
+    JButton create = new JButton(new Create(this, "CREATE"));
+    panel.add(create);
 
     return panel;
   }
