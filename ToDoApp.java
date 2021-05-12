@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import java.awt.Color;
 import javax.swing.SwingUtilities;
 import java.awt.FlowLayout;
+//changer langue des mois
 public class ToDoApp extends JFrame{
   private static  JButton create ;
   private static  JLabel name_label;
