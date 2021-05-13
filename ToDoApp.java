@@ -59,7 +59,6 @@ public class ToDoApp extends JFrame{
     JPanel panel = new JPanel();
     panel.setBackground(Color.white);
 
-
     JLabel name_label = new JLabel("Name : ");
     panel.add(name_label);
 
