@@ -41,7 +41,7 @@ public class ToDoApp extends JFrame{
     JMenuItem from_scratch = new JMenuItem(new FromScratch(this,"from scratch"));
 		menu1.add(from_scratch);
 
-    JMenuItem templates = new JMenuItem(new Templates(this,"templates"));
+    JMenuItem templates = new JMenuItem(new List(this,"list"));
     menu1.add(templates);
 
     menuBar.add(menu1);
