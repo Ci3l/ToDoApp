@@ -1,3 +1,4 @@
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
 import java.awt.Component;
@@ -37,7 +38,7 @@ public class Create extends AbstractAction{
     String strHour = hour.toString();
     String strMinute = minute.toString();
     try {
-      ImageIcon icon = new ImageIcon(new URL("https://cdn.tutsplus.com/mac/authors/legacy/Josh%20Johnson/2012/09/26/Stickies1.png"));
+      ImageIcon icon = new ImageIcon(new URL("https://cdn.tutsplus.com/mac/authors/legacy/Josh%20Johnson/2012/09/26/Stickies1.png"));//https://upload.wikimedia.org/wikipedia/commons/4/43/Nuvola_apps_user_with_note.svg
       JLabel label = new JLabel(icon);
       JPanel panel = new JPanel(new GridBagLayout());
       panel.add(label);
