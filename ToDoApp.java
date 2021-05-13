@@ -1,5 +1,9 @@
 import javax.swing.JMenuBar;
+import java.awt.Font;
+import java.util.Enumeration;
+import javax.swing.plaf.FontUIResource;
 import javax.swing.JMenuItem;
+import javax.swing.UIManager ;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
@@ -44,8 +48,9 @@ public class ToDoApp extends JFrame{
 
     setJMenuBar(menuBar);
     setTitle("To Do");
-    setSize(550,120);
+    setSize(600,120);
     setLocationRelativeTo(null);
+    setUIFont (new javax.swing.plaf.FontUIResource("Monospaced",Font.PLAIN,12));
     setResizable(true);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setContentPane(buildContentPane());
@@ -55,7 +60,7 @@ public class ToDoApp extends JFrame{
     panel.setBackground(Color.white);
 
 
-    JLabel name_label = new JLabel("Name");
+    JLabel name_label = new JLabel("Name : ");
     panel.add(name_label);
 
     nameTextField = new JTextField();
@@ -87,7 +92,7 @@ public class ToDoApp extends JFrame{
     minutes_deadline = new JComboBox(minutes);
 		panel.add(minutes_deadline);
 
-    JLabel note_label = new JLabel("Note");
+    JLabel note_label = new JLabel("Note : ");
     panel.add(note_label);
 
     note = new JTextField();
@@ -98,6 +103,16 @@ public class ToDoApp extends JFrame{
     panel.add(create);
 
     return panel;
+  }
+
+  public static void setUIFont(FontUIResource f)
+  {
+    Enumeration<Object> keys = UIManager.getDefaults().keys();
+    while (keys.hasMoreElements()) {
+        Object key = keys.nextElement();
+        Object value = UIManager.get(key);
+        if (value instanceof FontUIResource)
+            UIManager.put(key, f);  }
   }
 
   public static String getNameTextField(){return nameTextField.getText();}
