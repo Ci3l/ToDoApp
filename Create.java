@@ -64,6 +64,21 @@ public class Create extends AbstractAction{
       panel2.add(textPanel, BorderLayout.EAST);
       panel2.add(panel, BorderLayout.WEST);
       JOptionPane.showMessageDialog(null, panel2, name,JOptionPane.DEFAULT_OPTION);
+      int g = ToDoApp.getAccomplishment();
+			g ++ ;
+			ToDoApp.setAccomplishment(g);
+			if (g % 10 == 1){
+				JOptionPane.showMessageDialog(null,"It's your " + g + "st post-it", "Accomplishment",
+				JOptionPane.INFORMATION_MESSAGE);}
+			else if (g % 10 == 2){
+				JOptionPane.showMessageDialog(null,"It's your " + g + "nd post-it", "Accomplishment",
+				JOptionPane.INFORMATION_MESSAGE);}
+			else if (g % 10 == 3){
+				JOptionPane.showMessageDialog(null,"It's your " + g + "rd post-it", "Accomplishment",
+				JOptionPane.INFORMATION_MESSAGE);}
+			else {
+				JOptionPane.showMessageDialog(null,"It's your " + g + "th post-it", "Accomplishment",
+				JOptionPane.INFORMATION_MESSAGE);}
       } catch ( Exception a){
     }
   }

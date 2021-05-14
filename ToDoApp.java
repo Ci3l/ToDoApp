@@ -16,6 +16,9 @@ import javax.swing.SwingUtilities;
 import java.awt.FlowLayout;
 //changer langue des mois
 public class ToDoApp extends JFrame{
+  private static int accomplishment ;
+  private static int accomplishmentForList ;
+  private static JPanel panel ;
   private static  JButton create ;
   private static  JLabel name_label;
   private static  JLabel deadline_label;
@@ -56,7 +59,7 @@ public class ToDoApp extends JFrame{
     setContentPane(buildContentPane());
   }
   public JPanel buildContentPane(){
-    JPanel panel = new JPanel();
+    panel = new JPanel();
     panel.setBackground(Color.white);
 
     JLabel name_label = new JLabel("Name : ");
@@ -103,6 +106,16 @@ public class ToDoApp extends JFrame{
 
     return panel;
   }
+  public static String getNameTextField(){return nameTextField.getText();}
+  public static String getNoteTextField(){return note.getText();}
+  public static JComboBox getMonth(){return month_deadline;}
+  public static JComboBox getDates(){return date_deadline;}
+  public static JComboBox getHours(){return hours_deadline;}
+  public static JComboBox getMinutes(){return minutes_deadline;}
+  public static int getAccomplishment(){return accomplishment;}
+  public static void setAccomplishment(int newValue ){ accomplishment = newValue ;}
+  public static int getAccomplishmentForList(){return accomplishmentForList;}
+  public static void setAccomplishmentForList(int newValue ){ accomplishmentForList = newValue ;}
 
   public static void setUIFont(FontUIResource f)
   {
@@ -113,14 +126,6 @@ public class ToDoApp extends JFrame{
         if (value instanceof FontUIResource)
             UIManager.put(key, f);  }
   }
-
-  public static String getNameTextField(){return nameTextField.getText();}
-  public static String getNoteTextField(){return note.getText();}
-  public static JComboBox getMonth(){return month_deadline;}
-  public static JComboBox getDates(){return date_deadline;}
-  public static JComboBox getHours(){return hours_deadline;}
-  public static JComboBox getMinutes(){return minutes_deadline;}
-
 
   public static void main(String[] args){
     SwingUtilities.invokeLater(new Runnable(){
