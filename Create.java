@@ -48,7 +48,6 @@ public class Create extends AbstractAction{
       nameLabel.setBounds(50, 50, 100, 30);
       nameLabel.setFont(new Font("Monospaced", Font.PLAIN, 18));
       textPanel.add(nameLabel,Component.CENTER_ALIGNMENT);
-      nameLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
       monthLabel = new JLabel(strMonth + ' ' + strDate);
       monthLabel.setBounds(50, 50, 100, 30);
       monthLabel.setFont(new Font("Monospaced", Font.PLAIN, 15));
