@@ -65,7 +65,7 @@ public class Create extends AbstractAction{
       panel2.add(panel, BorderLayout.WEST);
       String[] options = {"done", "cancel", "modify"};
       int x = JOptionPane.showOptionDialog(null, panel2, name,
-              JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, options, options[0]);
+              JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
       System.out.println(x);
       int g = ToDoApp.getAccomplishment();
 			g ++ ;
