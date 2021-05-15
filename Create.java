@@ -64,24 +64,31 @@ public class Create extends AbstractAction{
       panel2.add(textPanel, BorderLayout.EAST);
       panel2.add(panel, BorderLayout.WEST);
       String[] options = {"done", "cancel", "modify"};
-      int return = JOptionPane.showOptionDialog(null, panel2, name,
+      int retour = JOptionPane.showOptionDialog(null, panel2, name,
               JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
-      System.out.println(return);
-      int g = ToDoApp.getAccomplishment();
-			g ++ ;
-			ToDoApp.setAccomplishment(g);
-			if (g % 10 == 1){
-				JOptionPane.showMessageDialog(null,"It's your " + g + "st post-it", "Accomplishment",
-				JOptionPane.INFORMATION_MESSAGE);}
-			else if (g % 10 == 2){
-				JOptionPane.showMessageDialog(null,"It's your " + g + "nd post-it", "Accomplishment",
-				JOptionPane.INFORMATION_MESSAGE);}
-			else if (g % 10 == 3){
-				JOptionPane.showMessageDialog(null,"It's your " + g + "rd post-it", "Accomplishment",
-				JOptionPane.INFORMATION_MESSAGE);}
-			else {
-				JOptionPane.showMessageDialog(null,"It's your " + g + "th post-it", "Accomplishment",
-				JOptionPane.INFORMATION_MESSAGE);}
+      System.out.println(retour);
+      if (retour == 0){
+        int g = ToDoApp.getAccomplishment();
+  			g ++ ;
+  			ToDoApp.setAccomplishment(g);
+  			if (g % 10 == 1){
+  				JOptionPane.showMessageDialog(null,"It's your " + g + "st post-it", "Accomplishment",
+  				JOptionPane.INFORMATION_MESSAGE);}
+  			else if (g % 10 == 2){
+  				JOptionPane.showMessageDialog(null,"It's your " + g + "nd post-it", "Accomplishment",
+  				JOptionPane.INFORMATION_MESSAGE);}
+  			else if (g % 10 == 3){
+  				JOptionPane.showMessageDialog(null,"It's your " + g + "rd post-it", "Accomplishment",
+  				JOptionPane.INFORMATION_MESSAGE);}
+  			else {
+  				JOptionPane.showMessageDialog(null,"It's your " + g + "th post-it", "Accomplishment",
+  				JOptionPane.INFORMATION_MESSAGE);}}
+      else if (retour == 1){
+        //close;
+      }
+      else if (retour == 1){
+        //JOptionPane for modification;
+      }
       } catch ( Exception a){
     }
   }
