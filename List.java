@@ -41,21 +41,29 @@ public class List extends AbstractAction {
 			listLabel.setBounds(50, 50, 100, 30);
 			listLabel.setFont(new Font("Monospaced", Font.PLAIN, 12));
 			panel.add(listLabel);
-			JOptionPane.showMessageDialog(null, panel, name,JOptionPane.DEFAULT_OPTION);
-			int g = ToDoApp.getAccomplishmentForList();
-			g ++ ;
-			ToDoApp.setAccomplishmentForList(g);
-			if (g % 10 == 1){
-				JOptionPane.showMessageDialog(null,"It's your " + g + "st list", "Accomplishment",
-				JOptionPane.INFORMATION_MESSAGE);}
-			else if (g % 10 == 2){
-				JOptionPane.showMessageDialog(null,"It's your " + g + "nd list", "Accomplishment",
-				JOptionPane.INFORMATION_MESSAGE);}
-			else if (g % 10 == 3){
-				JOptionPane.showMessageDialog(null,"It's your " + g + "rd list", "Accomplishment",
-				JOptionPane.INFORMATION_MESSAGE);}
-			else {
-				JOptionPane.showMessageDialog(null,"It's your " + g + "th list", "Accomplishment",
-				JOptionPane.INFORMATION_MESSAGE);}
+			String[] options = {"done", "cancel", "modify"};
+			int retour = JOptionPane.showOptionDialog(null, panel, name,
+							JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
+			if (retour == 0){
+				int g = ToDoApp.getAccomplishmentForList();
+				g ++ ;
+				ToDoApp.setAccomplishmentForList(g);
+				if (g % 10 == 1){
+					JOptionPane.showMessageDialog(null,"It's your " + g + "st done list", "Accomplishment",
+					JOptionPane.INFORMATION_MESSAGE);}
+				else if (g % 10 == 2){
+					JOptionPane.showMessageDialog(null,"It's your " + g + "nd done list", "Accomplishment",
+					JOptionPane.INFORMATION_MESSAGE);}
+				else if (g % 10 == 3){
+					JOptionPane.showMessageDialog(null,"It's your " + g + "rd done list", "Accomplishment",
+					JOptionPane.INFORMATION_MESSAGE);}
+				else {
+					JOptionPane.showMessageDialog(null,"It's your " + g + "th done list", "Accomplishment",
+					JOptionPane.INFORMATION_MESSAGE);}
+			} else if (retour == 1 ){
+				//close;
+			} else {
+				// JOptionPane for modification;
+			}
 	}
 }

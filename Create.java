@@ -66,27 +66,26 @@ public class Create extends AbstractAction{
       String[] options = {"done", "cancel", "modify"};
       int retour = JOptionPane.showOptionDialog(null, panel2, name,
               JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
-      System.out.println(retour);
       if (retour == 0){
         int g = ToDoApp.getAccomplishment();
   			g ++ ;
   			ToDoApp.setAccomplishment(g);
   			if (g % 10 == 1){
-  				JOptionPane.showMessageDialog(null,"It's your " + g + "st post-it", "Accomplishment",
+  				JOptionPane.showMessageDialog(null,"It's your " + g + "st done post-it", "Accomplishment",
   				JOptionPane.INFORMATION_MESSAGE);}
   			else if (g % 10 == 2){
-  				JOptionPane.showMessageDialog(null,"It's your " + g + "nd post-it", "Accomplishment",
+  				JOptionPane.showMessageDialog(null,"It's your " + g + "nd done post-it", "Accomplishment",
   				JOptionPane.INFORMATION_MESSAGE);}
   			else if (g % 10 == 3){
-  				JOptionPane.showMessageDialog(null,"It's your " + g + "rd post-it", "Accomplishment",
+  				JOptionPane.showMessageDialog(null,"It's your " + g + "rd done post-it", "Accomplishment",
   				JOptionPane.INFORMATION_MESSAGE);}
   			else {
-  				JOptionPane.showMessageDialog(null,"It's your " + g + "th post-it", "Accomplishment",
+  				JOptionPane.showMessageDialog(null,"It's your " + g + "th done post-it", "Accomplishment",
   				JOptionPane.INFORMATION_MESSAGE);}}
       else if (retour == 1){
         //close;
       }
-      else if (retour == 1){
+      else {
         //JOptionPane for modification;
       }
       } catch ( Exception a){
