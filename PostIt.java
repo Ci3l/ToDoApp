@@ -76,7 +76,7 @@ public class PostIt {
     });
     JButton buttonCancel = new JButton();
     buttonCancel.setText("cancel");
-    buttonDone.addActionListener(e -> {postIt.dispose();});
+    buttonCancel.addActionListener(e -> {postIt.dispose();});
     JButton buttonModify = new JButton(new ModifyPostIt(postIt, "modify"));
     panel3.add(buttonDone);
     panel3.add(buttonCancel);
