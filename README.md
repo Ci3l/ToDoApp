@@ -19,10 +19,21 @@ java ToDoApp
 ### View Project
 Unfortunately for now I can't host the code so to compensate here are some screenshots.
 
-<img src="screenshots/main_frame.png" align="center">
-<img src="screenshots/post_it.png" align="center"">
-<img src="screenshots/accomplishment.png" align="center">
+<p align="center">
+<img src="screenshots/main_frame.png">
+</p>
+<br/>
+<p align="center">
+<img src="screenshots/post_it.png">
+</p>
+<br/>   
+<p align="center">
+<img src="screenshots/accomplishment.png">
+</p>
+<br/> 
+<p align="center">
 <img src="screenshots/list.png" align="center">
-
+</p>
+<br/>                                                                                        
 ### About the Project
 The project is constantly evolving and a lot of new things are upcoming so if you have ideas, or you want to be involved please contact me [here](poire.erwan2005@gmail.com) or anywhere else.
