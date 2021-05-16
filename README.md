@@ -18,6 +18,7 @@ java ToDoApp
 ```
 ### View Project
 Unfortunately for now I can't host the code so to compensate here are some screenshots.
+
 <img src="screenshots/main_frame.png">
 <img src="screenshots/post_it.png">
 <img src="screenshots/accomplishment.png">
