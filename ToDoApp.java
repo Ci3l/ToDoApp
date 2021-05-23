@@ -51,7 +51,7 @@ public class ToDoApp extends JFrame{
 
     setJMenuBar(menuBar);
     setTitle("To Do");
-    setSize(600,120);
+    setSize(600,140);
     setLocationRelativeTo(null);
     setUIFont (new javax.swing.plaf.FontUIResource("Monospaced",Font.PLAIN,12));
     setResizable(true);
