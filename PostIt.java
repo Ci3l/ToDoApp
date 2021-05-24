@@ -24,7 +24,7 @@ public class PostIt {
   private static JLabel timeLabel;
   public static void PostIt(String name, String note, Object month, Object date, Object hour, Object minute, String strMonth, String strDate, String strHour, String strMinute){
     try {
-    JFrame postIt = new JFrame(name);
+    JFrame postIt = new JFrame(name + ' ');
     JPanel postItPanel = new JPanel();
     postItPanel.setLayout(new BoxLayout(postItPanel, BoxLayout.Y_AXIS));
 
@@ -35,19 +35,19 @@ public class PostIt {
     JPanel textPanel = new JPanel() ;
     textPanel.setLayout(new BoxLayout(textPanel, BoxLayout.Y_AXIS));
     nameLabel = new JLabel(name.toUpperCase());
-    nameLabel.setBounds(50, 50, 100, 30);
+    //nameLabel.setBounds(50, 50, 100, 30);
     nameLabel.setFont(new Font("Monospaced", Font.PLAIN, 18));
     textPanel.add(nameLabel,Component.CENTER_ALIGNMENT);
-    monthLabel = new JLabel(strMonth + ' ' + strDate);
-    monthLabel.setBounds(50, 50, 100, 30);
+    monthLabel = new JLabel(strMonth + ' ' + strDate + ' ');
+    //monthLabel.setBounds(50, 50, 100, 30);
     monthLabel.setFont(new Font("Monospaced", Font.PLAIN, 15));
     textPanel.add(monthLabel,Component.CENTER_ALIGNMENT);
     timeLabel = new JLabel(strHour + ':' + strMinute);
-    timeLabel.setBounds(50, 50, 100, 30);
+    //timeLabel.setBounds(50, 50, 100, 30);
     timeLabel.setFont(new Font("Monospaced", Font.PLAIN, 14));
     textPanel.add(timeLabel,Component.CENTER_ALIGNMENT);
     noteLabel = new JLabel(note.toLowerCase());
-    noteLabel.setBounds(50, 50, 100, 30);
+    //noteLabel.setBounds(50, 50, 400, 30);
     noteLabel.setFont(new Font("Monospaced", Font.PLAIN, 12));
     textPanel.add(noteLabel,Component.CENTER_ALIGNMENT);
     JPanel panel2 = new JPanel(new BorderLayout());
@@ -86,8 +86,17 @@ public class PostIt {
     postItPanel.add(panel2);
     postItPanel.add(panel3);
 
+
     postIt.add(postItPanel);
-    postIt.setSize(300, 300);
+    int noteLength = note.length();
+    System.out.println(noteLength);
+    if (noteLength <= 11){postIt.setSize(300, 300);}
+    else {
+      double newLengthForPostItDouble = (300 + (noteLength - 11 )*10)*(1 -0.17);
+      int newLengthForPostItInt = (int)newLengthForPostItDouble;
+      postIt.setSize(newLengthForPostItInt, 300);
+      System.out.println(newLengthForPostItInt) ;
+    }
     postIt.setLocationRelativeTo(null);
     postIt.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     postIt.setVisible(true);
