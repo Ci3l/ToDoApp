@@ -23,6 +23,7 @@ public class ModifyChecklist extends AbstractAction{
   }
 
   public void actionPerformed(ActionEvent e) {
+    System.out.println("worked");
     /*String[] options = {"name", "date", "note"};
     int retour = JOptionPane.showOptionDialog(null, "What would you modify ?", "Modification",
             JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
