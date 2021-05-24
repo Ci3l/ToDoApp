@@ -24,7 +24,7 @@ public class PostIt {
   private static JLabel timeLabel;
   public static void PostIt(String name, String note, Object month, Object date, Object hour, Object minute, String strMonth, String strDate, String strHour, String strMinute){
     try {
-    JFrame postIt = new JFrame(name + ' ');
+    JFrame postIt = new JFrame(name);
     JPanel postItPanel = new JPanel();
     postItPanel.setLayout(new BoxLayout(postItPanel, BoxLayout.Y_AXIS));
 
@@ -46,7 +46,7 @@ public class PostIt {
     //timeLabel.setBounds(50, 50, 100, 30);
     timeLabel.setFont(new Font("Monospaced", Font.PLAIN, 14));
     textPanel.add(timeLabel,Component.CENTER_ALIGNMENT);
-    noteLabel = new JLabel(note.toLowerCase());
+    noteLabel = new JLabel(note.toLowerCase() + ' ');
     //noteLabel.setBounds(50, 50, 400, 30);
     noteLabel.setFont(new Font("Monospaced", Font.PLAIN, 12));
     textPanel.add(noteLabel,Component.CENTER_ALIGNMENT);
@@ -102,4 +102,8 @@ public class PostIt {
     postIt.setVisible(true);
   } catch ( Exception a){}//https://upload.wikimedia.org/wikipedia/commons/4/43/Nuvola_apps_user_with_note.svg
 }
+public static void setName(JFrame frame,String newName){nameLabel.setText(newName.toUpperCase());}
+public static void setDate(JFrame frame,String newMonth, String newDate){monthLabel.setText(newMonth + ' ' + newDate + ' ');}
+public static void setTime(JFrame frame,String newHour,String newMinute){timeLabel.setText(newHour + ':' + newMinute);}
+public static void setNote(JFrame frame,String newNote){timeLabel.setText(newNote.toLowerCase() + ' ');}
 }
