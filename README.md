@@ -36,4 +36,4 @@ Unfortunately for now I can't host the code so to compensate here are some scree
 </p>
 <br/>                                                                                        
 ### About the Project
-The project is constantly evolving and a lot of new things are upcoming so if you have ideas, or you want to be involved please contact me [here](poire.erwan2005@gmail.com) or anywhere else.
+The project is constantly evolving and a lot of new things are upcoming so if you have ideas, or you want to be involved please contact me on my mail at poire.erwan2005@gmail.com or anywhere else.
