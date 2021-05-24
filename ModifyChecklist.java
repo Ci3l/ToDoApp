@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.Font;
@@ -23,18 +24,19 @@ public class ModifyChecklist extends AbstractAction{
   }
 
   public void actionPerformed(ActionEvent e) {
-    System.out.println("worked");
-    /*String[] options = {"name", "date", "note"};
-    int retour = JOptionPane.showOptionDialog(null, "What would you modify ?", "Modification",
-            JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
+    String[] options = {"name", "list"};
+    int retour = JOptionPane.showOptionDialog(null, "What would you modify ?", "Modification",JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
     if (retour == 0){
       String newName = JOptionPane.showInputDialog("Enter the new name");
-      //Create.setName(newName);
+      Checklist.setListName(frame,newName);
     } else if (retour == 1){
-      //
-    } else if (retour == 2){
-      String newNote = JOptionPane.showInputDialog("Enter the new note");
-      //Create.setNote(newNote);
-    }*/
+      String listElements = JOptionPane.showInputDialog("List Elements (separated by comas) : ");
+      String[] elementsList = listElements.split(",") ;
+      ArrayList<String> elementsListArray = new ArrayList<String>(20) ;
+      for (String i : elementsList) { elementsListArray.add("-> " + i);}
+      int j = elementsListArray.size() ;
+      while(j <= 20) { elementsListArray.add(" "); j ++ ;}
+      Checklist.setList(frame, elementsListArray);
+    }
   }
 }

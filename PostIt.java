@@ -105,5 +105,5 @@ public class PostIt {
 public static void setName(JFrame frame,String newName){nameLabel.setText(newName.toUpperCase());}
 public static void setDate(JFrame frame,String newMonth, String newDate){monthLabel.setText(newMonth + ' ' + newDate + ' ');}
 public static void setTime(JFrame frame,String newHour,String newMinute){timeLabel.setText(newHour + ':' + newMinute);}
-public static void setNote(JFrame frame,String newNote){timeLabel.setText(newNote.toLowerCase() + ' ');}
+public static void setNote(JFrame frame,String newNote){timeLabel.setText(noteLabel.toLowerCase() + ' ');}
 }

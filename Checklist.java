@@ -85,4 +85,6 @@ public class Checklist {
         checklist.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         checklist.setVisible(true);
     }
+    public static void setListName(JFrame frame, String newName){nameLabel.setText(newName.toUpperCase());}
+    public static void setList(JFrame frame,ArrayList<String> elementsListArray){listLabel.setText("<html>" + elementsListArray.get(0).toString() + "<br>" +  elementsListArray.get(1).toString() + "<br>" +  elementsListArray.get(2).toString() + "<br>" +  elementsListArray.get(3).toString() + "<br>" +  elementsListArray.get(4).toString() + "<br>" +  elementsListArray.get(5).toString() + "<br>" +  elementsListArray.get(6).toString() + "<br>" +  elementsListArray.get(7).toString() + "<br>" + elementsListArray.get(8).toString() + "<br>" +  elementsListArray.get(9).toString() + "<br>" +  elementsListArray.get(10).toString() + "<br>" +  elementsListArray.get(11).toString() + "<br>" +  elementsListArray.get(12).toString() + "<br>" +  elementsListArray.get(13).toString() + "<br>" +  elementsListArray.get(14).toString() + "<br>" +  elementsListArray.get(15).toString() + "<br>" +  elementsListArray.get(16).toString() + "<br>" +  elementsListArray.get(17).toString() + "<br>" +  elementsListArray.get(18).toString() + "<br>" +  elementsListArray.get(19).toString() + "<br>" +  elementsListArray.get(20).toString() + "</html>");}
 }
