@@ -1,19 +1,5 @@
-import java.awt.Dimension;
 import java.awt.event.ActionEvent;
-import java.awt.Font;
-import java.awt.Component;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JTextField;
 import javax.swing.AbstractAction;
-import java.awt.BorderLayout;
-import javax.swing.BoxLayout ;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
-import java.net.URL;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
 public class Create extends AbstractAction{
   private ToDoApp fenetre;
   public Create(ToDoApp fenetre, String texte){
