@@ -3,7 +3,7 @@
 
 
 ### Description
-Created a to-do app with post-it(with a deadline) and list. The project is in progress, so I would love to hear new ideas.
+Created a to-do app with post-it and lists. I would love to hear new ideas to improve the project.
 
 ### Use Project
 (you'll need to have Java in your PATH if you don't have it go check this [link](https://javatutorial.net/set-java-home-windows-10))
@@ -30,10 +30,10 @@ Unfortunately for now I can't host the code so to compensate here are some scree
 <p align="center">
 <img src="screenshots/accomplishment.png">
 </p>
-<br/> 
+<br/>
 <p align="center">
 <img src="screenshots/list.png" align="center">
 </p>
 <br/>                                                                                        
 ### About the Project
-The project is constantly evolving and a lot of new things are upcoming so if you have ideas, or you want to be involved please contact me on my mail at poire.erwan2005@gmail.com or anywhere else.
+The project now is sort of up in the air but if you have ideas, or you want to be involved please contact me on my mail at poire.erwan2005@gmail.com or anywhere else.
