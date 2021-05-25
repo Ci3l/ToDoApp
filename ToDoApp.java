@@ -1,8 +1,10 @@
-import javax.swing.JMenuBar;
-import java.awt.Font;
 import java.util.Enumeration;
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.Font;
 import javax.swing.plaf.FontUIResource;
 import javax.swing.JMenuItem;
+import javax.swing.JMenuBar;
 import javax.swing.UIManager ;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -10,27 +12,24 @@ import javax.swing.JTextField;
 import javax.swing.JMenu;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.JLabel;
-import java.awt.Color;
 import javax.swing.SwingUtilities;
-import java.awt.FlowLayout;
-//changer langue des mois
+import javax.swing.JLabel;
 public class ToDoApp extends JFrame{
   private static int accomplishment ;
   private static int accomplishmentForList ;
   private static JPanel panel ;
-  private static  JButton create ;
-  private static  JLabel name_label;
-  private static  JLabel deadline_label;
-  private static  JLabel date_deadline_label ;
-  private static  JLabel hour_deadline_label ;
-  private static  JLabel note_label ;
-  private static  JTextField nameTextField ;
-  private static  JTextField note ;
-  private static  JComboBox month_deadline ;
-  private static  JComboBox date_deadline ;
-  private static  JComboBox hours_deadline ;
-  private static  JComboBox minutes_deadline ;
+  private static JButton create ;
+  private static JLabel name_label;
+  private static JLabel deadline_label;
+  private static JLabel date_deadline_label ;
+  private static JLabel hour_deadline_label ;
+  private static JLabel note_label ;
+  private static JTextField nameTextField ;
+  private static JTextField note ;
+  private static JComboBox month_deadline ;
+  private static JComboBox date_deadline ;
+  private static JComboBox hours_deadline ;
+  private static JComboBox minutes_deadline ;
   private ToDoApp main_frame = this ;
   public ToDoApp() {
     super();
@@ -113,9 +112,7 @@ public class ToDoApp extends JFrame{
   public static void setAccomplishment(int newValue ){ accomplishment = newValue ;}
   public static int getAccomplishmentForList(){return accomplishmentForList;}
   public static void setAccomplishmentForList(int newValue ){ accomplishmentForList = newValue ;}
-
-  public static void setUIFont(FontUIResource f)
-  {
+  public static void setUIFont(FontUIResource f){
     Enumeration<Object> keys = UIManager.getDefaults().keys();
     while (keys.hasMoreElements()) {
         Object key = keys.nextElement();
@@ -123,7 +120,6 @@ public class ToDoApp extends JFrame{
         if (value instanceof FontUIResource)
             UIManager.put(key, f);  }
   }
-
   public static void main(String[] args){
     SwingUtilities.invokeLater(new Runnable(){
       public void run(){
