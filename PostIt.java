@@ -1,3 +1,7 @@
+import java.awt.image.BufferedImage;
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
 import java.awt.event.ActionEvent;
 import java.awt.FlowLayout ;
 import java.awt.Font;
@@ -19,13 +23,15 @@ public class PostIt {
   private static JLabel noteLabel;
   private static JLabel monthLabel;
   private static JLabel timeLabel;
+  private static BufferedImage image;
+  private static ImageIcon icon ;
   public static void PostIt(String name, String note, Object month, Object date, Object hour, Object minute, String strMonth, String strDate, String strHour, String strMinute){
     try {
     JFrame postIt = new JFrame(name);
     JPanel postItPanel = new JPanel();
     postItPanel.setLayout(new BoxLayout(postItPanel, BoxLayout.Y_AXIS));
 
-    ImageIcon icon = new ImageIcon(new URL("https://cdn.tutsplus.com/mac/authors/legacy/Josh%20Johnson/2012/09/26/Stickies1.png"));
+    try {image = ImageIO.read(new File("post_it_icon.png")); icon = new ImageIcon(image) ;} catch (IOException ex){ icon = new ImageIcon(new URL("https://cdn.tutsplus.com/mac/authors/legacy/Josh%20Johnson/2012/09/26/Stickies1.png"));}
     JLabel label = new JLabel(icon);
     JPanel panel = new JPanel(new GridBagLayout());
     panel.add(label);
