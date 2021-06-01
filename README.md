@@ -20,19 +20,19 @@ java ToDoApp
 Unfortunately for now I can't host the code so to compensate here are some screenshots.
 
 <p align="center">
-<img src="screenshots/main_frame.png">
+<img src="assets/main_frame.png">
 </p>
 <br/>
 <p align="center">
-<img src="screenshots/post_it.png">
+<img src="assets/post_it.png">
 </p>
 <br/>   
 <p align="center">
-<img src="screenshots/accomplishment.png">
+<img src="assets/accomplishment.png">
 </p>
 <br/>
 <p align="center">
-<img src="screenshots/list.png" align="center">
+<img src="assets/list.png" align="center">
 </p>
 <br/>         
 
