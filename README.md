@@ -1,6 +1,6 @@
 # ToDoApp
 
-A simple and intuitive To-Do application designed to help you manage your tasks efficiently. Built with Java, this app allows users to create, edit, and delete tasks with ease.
+**ToDoApp** is a task management application I developed to validate and apply the Java programming skills I learned through self-study. This app provides a simple and intuitive interface for managing tasks effectively. With ToDoApp, users can easily create, edit, and delete tasks, benefiting from a clean and user-friendly design that makes task management straightforward and efficient.
 
 ## Features
 
@@ -12,7 +12,11 @@ A simple and intuitive To-Do application designed to help you manage your tasks 
 ## Technologies
 
 - **Programming Language:** Java
-- **GUI Toolkit:** [Swing/JavaFX] (if applicable)
+- **GUI Toolkit:** Swing
+
+## Libraries Used
+
+- **Java Standard Library:** Includes `java.awt` for basic GUI components and `javax.swing` for Swing-based components.
 
 ## Demo
 
