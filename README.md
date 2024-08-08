@@ -76,4 +76,4 @@ If you’d like to contribute, please follow these guidelines:
 * Open a pull request
 
 ### License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the EPL 2.0 License - see the LICENSE file for details.
